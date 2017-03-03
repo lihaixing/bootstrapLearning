@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+        <head>
+                <meta charset="utf-8" />
+                <meta name="viewport" content="width=device-width, initial-scale=1">
+                <title></title>
+                <!-- 新 Bootstrap 核心 CSS 文件 -->
+                <link rel="stylesheet" href="http://cdn.bootcss.com/bootstrap/3.3.4/css/bootstrap.min.css">
+                <!-- 可选的Bootstrap主题文件（一般不用引入） -->
+                <link rel="stylesheet" href="http://cdn.bootcss.com/bootstrap/3.3.4/css/bootstrap-theme.min.css">
+                <!-- jQuery文件。务必在bootstrap.min.js 之前引入 -->
+                <script src="http://cdn.bootcss.com/jquery/1.11.2/jquery.min.js"></script>
+                <!-- 最新的 Bootstrap 核心 JavaScript 文件 -->
+                <script src="http://cdn.bootcss.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+                <style>
+                        div{
+                                border:1px solid #00A;
+                                background:#CCC;
+                                text-align: center;
+                        }
+                </style>
+        </head>
+        <body>
+                <div class="container" style="background: red">固定宽度，并支持响应式</div>
+                <div class="container-fluid" style="background: blue">100%,占满全部viewport视口</div>
+                <div class="container">
+                        <!--理解：当屏幕>1200px时，按列排列，container最大1170px-->
+                        <div class="row">
+                                <div class="col-lg-4">占6列，也就是一半</div>
+                                <div class="col-lg-4">占6列，也就是一半</div>
+                                <div class="col-lg-4">占6列，也就是一半</div>
+                        </div>
+                        <div class="row">
+                                <div class="col-md-6">占6列，也就是一半</div>
+                                <div class="col-md-6">占6列，也就是一半</div>
+                        </div>
+                        <div class="row">
+                                <div class="col-sm-3">占6列，也就是一半</div>
+                                <div class="col-sm-3">占6列，也就是一半</div>
+                                <div class="col-sm-3">占6列，也就是一半</div>
+                                <div class="col-sm-3">占6列，也就是一半</div>
+                        </div>
+                        <div class="row">
+                                <div class="col-xs-2">占6列，也就是一半</div>
+                                <div class="col-xs-2">占6列，也就是一半</div>
+                                <div class="col-xs-2">占6列，也就是一半</div>
+                                <div class="col-xs-2">占6列，也就是一半</div>
+                                <div class="col-xs-2">占6列，也就是一半</div>
+                                <div class="col-xs-2">占6列，也就是一半</div>
+                                <div class="col-xs-2">占6列，也就是一半</div>
+                                <div class="col-xs-2">占6列，也就是一半</div>
+                        </div>
+                </div>
+                <div class="container_fluid">
+                        <div class="row">
+                                <div class="col-lg-6 col-md-4">呵呵</div>
+                                <div class="col-lg-6 col-md-8">呵呵</div>
+                        </div>
+                        <div class="row">
+                                <!--理解：中屏时列8格和4格，正好铺满全屏，
+                                 当超小屏时，列12格和6格，6格被顶到下一行-->
+                                <div class="col-xs-12 col-md-8">.col-xs-12 .col-md-8</div>
+                                <div class="col-xs-6 col-md-4">.col-xs-6 .col-md-4</div>
+                        </div>
+                </div>
+        </body>
+</html>

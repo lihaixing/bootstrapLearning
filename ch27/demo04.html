@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>demo04</title>
+		<link rel="stylesheet" href="css/bootstrap.min.css" />
+		<script type="application/javascript" src="js/jquery-1.11.1.min.js"></script>
+	    <script language="JavaScript" src="js/bootstrap.min.js"></script>
+	    <script language="JavaScript">
+           $(function(){
+           	
+           	$('#channel_demo2').on('show.bs.collapse', function () {
+    $("#tashow").html("栏目2展开了。。。");
+});
+           	
+           });
+	    </script>
+	</head>
+	<body>
+		    <div class="container">
+	          
+	          <div class="panel-group" id="panelcontainer">
+	          	  <!--一个功能 -->
+	          	  <div class="panel panel-default">
+	          	  	  <div class="panel-heading">
+	          	  	  	<h4 class="panel-title">
+	          	  	  		<a href="#" data-toggle="collapse" data-target="#channel_demo1" data-parent="#panelcontainer">栏目管理1</a>
+	          	  	  	</h4>
+	          	  	  </div>
+	          	  	  
+	          	  	  <div class=" collapse panel-collapse" id="channel_demo1">
+	          	  	  	<div class="panel-body">
+	          	  	  		<ul>
+	          	  	  			<li><a href="#">增加栏目</a></li>
+	          	  	  			<li><a href="#">增加栏目</a></li>
+	          	  	  			<li><a href="#">增加栏目</a></li>
+	          	  	  		</ul>
+	          	  	  	</div>
+	          	  	  </div>
+	          	  </div>
+	          	
+	          		  <!--一个功能 -->
+	          	  <div class="panel panel-default">
+	          	  	  <div class="panel-heading">
+	          	  	  	<h4 class="panel-title">
+	          	  	  		<a href="#" data-toggle="collapse" data-target="#channel_demo2" id="chanel2">栏目管理2</a>
+	          	  	  	</h4>
+	          	  	  </div>
+	          	  	  
+	          	  	  <div class=" collapse panel-collapse" id="channel_demo2">
+	          	  	  	<div class="panel-body">
+	          	  	  		<ul>
+	          	  	  			<li><a href="#">增加栏目</a></li>
+	          	  	  			<li><a href="#">增加栏目</a></li>
+	          	  	  			<li><a href="#">增加栏目</a></li>
+	          	  	  		</ul>
+	          	  	  	</div>
+	          	  	  </div>
+	          	  </div>
+	          	  
+	          	  	  <!--一个功能 -->
+	          	  <div class="panel panel-default">
+	          	  	  <div class="panel-heading">
+	          	  	  	<h4 class="panel-title">
+	          	  	  		<a href="#" data-toggle="collapse" data-target="#channel_demo3">栏目管理3</a>
+	          	  	  	</h4>
+	          	  	  </div>
+	          	  	  
+	          	  	  <div class="collapse panel-collapse in" id="channel_demo3">
+	          	  	  	<div class="panel-body">
+	          	  	  		<ul>
+	          	  	  			<li><a href="#">增加栏目</a></li>
+	          	  	  			<li><a href="#">增加栏目</a></li>
+	          	  	  			<li><a href="#">增加栏目</a></li>
+	          	  	  		</ul>
+	          	  	  	</div>
+	          	  	  </div>
+	          	  </div>
+	          	
+	          </div>
+	          
+	          <div id="tashow">栏目2信息</div>
+	          
+		    </div>
+	</body>
+</html>

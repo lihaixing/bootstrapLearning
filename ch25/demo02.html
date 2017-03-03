@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>demo01</title>
+		<link rel="stylesheet" href="css/bootstrap.min.css" />
+		<script type="application/javascript" src="js/jquery-1.11.1.min.js"></script>
+	    <script language="JavaScript" src="js/bootstrap.min.js"></script>
+	    <script language="JavaScript">
+	    	$(function () {
+	    		
+	    		$("#showbtn").click(function(){
+	    			
+	    			  $('[data-toggle="tooltip"]').tooltip('show');
+	    		});
+
+
+	    	
+	    	
+	    	});
+	    	
+	    </script>
+	</head>
+	<body>
+		<div style=" margin: 200px;">
+			
+		    <button type="button" class="btn btn-danger" title="向左显示"  data-toggle="tooltip" data-placement="left">向左</button>
+		    
+		    <button type="button" class="btn btn-danger" title="向上显示" data-toggle="tooltip" data-placement="top">向上</button>
+		   <br/>
+		   
+		   <button type="button" class="btn btn-danger" id="showbtn">显示</button>
+		</div>
+	</body>
+</html>

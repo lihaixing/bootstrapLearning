@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>demo01</title>
+		<link rel="stylesheet" href="css/bootstrap.min.css" />
+		<script type="application/javascript" src="js/jquery-1.11.1.min.js"></script>
+	    <script language="JavaScript" src="js/bootstrap.min.js"></script>
+	    <script language="JavaScript">
+	    	$(function(){
+	    		
+	    		$('.nav a').click(function (e) {
+  e.preventDefault();
+  $(this).tab('show')
+});
+
+$("#show2").click(function(){
+	
+	$("#cgui").tab("show");
+});
+	    	});
+	    	
+	    </script>
+	</head>
+	<body>
+		<div class="container">
+	      <!--选项卡          -->
+	      <ul class="nav nav-tabs">
+	      	<li><a href="#pan1">搜索</a></li>
+	      	<li><a href="#pan2" id="cgui">常规</a></li>
+	      	<li><a href="#pan3">查看</a></li>
+	      </ul>
+	      <!--面板-->
+	      <div class="tab-content">
+	      	 <div class="tab-pane active" id="pan1">
+	      	 	搜索面板	搜索面板	搜索面板	搜索面板	搜索面板	搜索面板	搜索面板	搜索面板
+	      	 </div>
+	      	 <div class="tab-pane" id="pan2">
+	      	 	常规面板常规面板常规面板常规面板常规面板常规面板常规面板
+	      	 </div>
+	      	  <div class="tab-pane" id="pan3">
+	      	 	查看面板查看面板查看面板查看面板查看面板查看面板
+	      	 </div>
+	      </div>
+	  </div>
+	  <button type="button" id="show2">显示常规</button>
+	</body>
+</html>
