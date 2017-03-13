@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<!-- 新 Bootstrap 核心 CSS 文件 -->
+	<link rel="stylesheet" href="http://cdn.bootcss.com/bootstrap/3.3.4/css/bootstrap.min.css">
+	<!-- 可选的Bootstrap主题文件（一般不用引入） -->
+	<link rel="stylesheet" href="http://cdn.bootcss.com/bootstrap/3.3.4/css/bootstrap-theme.min.css">
+	<!-- jQuery文件。务必在bootstrap.min.js 之前引入 -->
+	<script src="http://cdn.bootcss.com/jquery/1.11.2/jquery.min.js"></script>
+	<!-- 最新的 Bootstrap 核心 JavaScript 文件 -->
+	<script src="http://cdn.bootcss.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+	<style>
+		.container .row div{
+			background: #2675D1;
+			border: 1px solid #DE501E;
+			font-size:14px;
+			line-height:30px;
+		}
+	</style>
+</head>
+<body>
+<div class="container">
+<!-- 嵌套 -->
+	<div class="row">
+		<div class="col-sm-9">hello sm9</div>
+		<div class="col-sm-3">
+			<div class="row">
+				<div class="col-sm-6">sm6</div>
+				<div class="col-sm-6">sm6</div>
+			</div>
+		</div>
+	</div>
+	<!-- 排序 -->
+	<div class="row">
+		<div class="col-md-9 col-md-push-3">.col-md-9 .col-md-push-3</div>
+		<div class="col-md-3 col-md-pull-9">.col-md-3 .col-md-pull-9</div>
+	</div>
+	<div class="row">
+		<div class="col-md-3 pull-left">left</div>
+		<div class="col-md-3 pull-right">right</div>
+	</div>
+	<table class="table table-responsive text-center">
+		<tr>
+			<td class="lead">hello</td>
+			<td>hello</td>
+			<td>hello</td>
+			<td>hello</td>
+		</tr><tr>
+			<td>hello</td>
+			<td>hello</td>
+			<td>hello</td>
+			<td>hello</td>
+		</tr><tr>
+			<td>hello</td>
+			<td>hello</td>
+			<td>hello</td>
+			<td>hello</td>
+		</tr>
+	</table>
+	<dl class="dl-horizontal">
+		<dt>java1</dt>
+		<dd>java1是一门面向对象的编程语言，我用了差不多十年，非常喜欢它</dd>
+		<dt>java2</dt>
+		<dd>java2是一门面向对象的编程语言，我用了差不多十年，非常喜欢它</dd>
+		<dt>java3</dt>
+		<dd>java3是一门面向对象的编程语言，我用了差不多十年，非常喜欢它</dd>
+	</dl>
+</div>
+</body>
+</html>
